@@ -19,7 +19,6 @@ def add_student(body=None):  # noqa: E501
     if connexion.request.is_json:
         body = Student.from_dict(connexion.request.get_json())  # noqa: E501
         return add(body)
-        #test
     return 500, 'error'
 
 
